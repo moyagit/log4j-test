@@ -2,11 +2,7 @@
 <configuration status="INFO">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout>
-                <MarkerPatternSelector defaultPattern="%sn. %msg: Logger=%logger%n">
-                    <PatternMatch key="CLASS" pattern="%sn. %msg: Class=%class%n"/>
-                </MarkerPatternSelector>
-            </PatternLayout>
+            <PatternLayout pattern="%d{HH} [%t] %-5level %logger{5} - %msg%n"/>
         </Console>
     </Appenders>
     <Loggers>
