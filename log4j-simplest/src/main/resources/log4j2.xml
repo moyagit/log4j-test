@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <MarkerPatternSelector defaultPattern="%sn. %msg: Logger=%logger%n">
+                    <PatternMatch key="CLASS" pattern="%sn. %msg: Class=%class%n"/>
+                </MarkerPatternSelector>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO"> <!-- 全局配置 -->
+            <AppenderRef ref="Console" />
+        </Root>
+
+    </Loggers>
+
+</configuration>
